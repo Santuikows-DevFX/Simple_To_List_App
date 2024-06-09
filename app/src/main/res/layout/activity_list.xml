@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity"
+    android:background="@color/american_pastel_skin"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="YOUR TASKS "
+        android:fontFamily="@font/pixel"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="48dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+    >
+        <EditText
+            android:id="@+id/tbDateLabel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/datelabelbg"
+            android:enabled="false"
+            android:fontFamily="@font/pixel"
+            android:hint="Sort Tasks by Date"
+            android:padding="8dp"
+            android:textColor="#262626"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnSelectDate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/baseline_calendar_month_24"
+            android:layout_alignEnd="@id/tbDateLabel"
+            android:layout_marginTop="8pt"
+            android:background="@null"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/dark_pastel_skin"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/baseline_add_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reclistTodos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="140dp" />
+
+        <CheckBox
+            android:id="@+id/cbSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="76dp"
+            android:text="See All Tasks"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/pixel"
+            android:textColorHint="@color/black"
+            />
+
+        <DatePicker
+            android:id="@+id/calendarDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--default color pallette-->
+    <color name="dark_pastel_skin">#FFBE98</color>
+    <color name="american_pastel_skin">#FEECE2</color>
+    <color name="medyo_light_pastel_skin">#F7DED0</color>
+    <color name="kayumanggi_pastel_skin">#E2BFB3</color>
+
+    <!--girly pallette-->
+
+
+    <!--emo color pallette-->
+
+</resources>

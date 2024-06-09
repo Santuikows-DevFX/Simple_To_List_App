@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".AddTodoTitle"
+    android:background="@color/american_pastel_skin"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="CREATE YOUR \nTASK "
+        android:fontFamily="@font/pix"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="48dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+
+    <EditText
+        android:id="@+id/tbTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:fontFamily="@font/pix"
+        android:textSize="20dp"
+        android:hint="Task Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/datelabelbg"
+
+        />
+
+    <EditText
+        android:id="@+id/tbDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:fontFamily="@font/pix"
+        android:textSize="20dp"
+        android:hint="Select Date to do the task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401"
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/datelabelbg"
+        android:layout_marginTop="40dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnAddDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/baseline_calendar_month_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tbDate"
+        app:layout_constraintEnd_toEndOf="@+id/tbDate"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="@+id/tbDate"
+        app:layout_constraintTop_toTopOf="@+id/tbDate" />
+
+    <Button
+        android:id="@+id/btnAddTitle"
+        android:layout_width="339dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#ECB176"
+        android:fontFamily="@font/pix"
+        android:textSize="29dp"
+        android:padding="8dp"
+        android:text="PROCEED"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

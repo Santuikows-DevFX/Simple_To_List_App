@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    android:background="@color/dark_pastel_skin"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/dark_pastel_skin"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            android:background="@drawable/datelabelbg"
+            android:backgroundTint="@color/dark_pastel_skin"
+            >
+
+            <ImageView
+                android:id="@+id/btnDeleteCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_delete_24"/>
+
+            <TextView
+                android:id="@+id/txtTitleCard"
+                android:layout_toRightOf="@id/btnDeleteCard"
+                android:layout_marginStart="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task Title"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pix"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:background="@color/dark_pastel_skin"
+                />
+
+            <ImageView
+                android:id="@+id/btnViewCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_keyboard_arrow_right_24"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+<!--<TextView-->
+<!--android:id="@+id/txtTimeLabelCard"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_toStartOf="@id/btnViewCard"-->
+<!--android:text="Time"-->
+<!--android:textSize="18dp" />-->
